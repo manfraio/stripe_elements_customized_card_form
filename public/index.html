@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stripe Elements</title>
+</head>
+<body>
+    <div class="card_box">
+        <!-- <label for="card-element">Credit or debit card</label>
+        <div id="card-element" class="card_input"></div> -->
+
+        <label for="cardholder-name">Cardholder name</label>
+        <input id="cardholder-name" class="card_input" type="text">
+
+        <label for="cardholder-email">Cardholder email</label>
+        <input id="cardholder-email" class="card_input" type="email">
+
+        <label for="card-number-element">Card number</label>
+        <div id="card-number-element" class="card_input"></div>
+
+        <div class="card_row">
+            <div>
+                <label for="card-expiry-element">Expiry date</label>
+                <div id="card-expiry-element" class="card_input"></div>
+            </div>
+
+            <div>
+                <label for="card-cvc-element">CVC</label>
+                <div id="card-cvc-element" class="card_input"></div>
+            </div>
+    
+            <div>
+                <label for="cardholder-zip">Zip code</label>
+                <input id="cardholder-zip" class="card_input" type="text">
+            </div>
+        </div>
+
+        <div id="card-result"></div>
+
+        <button id="card-button">Pay $20</button>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
